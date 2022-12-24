@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+ 
+}
+
+.nav-container{
+  background-color: black;
+  color: white;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 30px
+}
+.nav-container button{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.insert-container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+form{
+  display: grid;
+  gap: 10px;
+}
+form textarea{
+  height: 80px;
+}
+
+  
+
+form input,textarea{
+  padding: 5px 10px;
+  border: 1px solid rgb(151, 150, 150);
+  border-radius: 5px;
+}
+form button{
+  width: 60px;
+  padding:9px;
+  color: white;
+  background-color: blue;
+    border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booklist-container{
+  width: 50%;
+}
+
+
+.display{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px ;
+  border: 1px solid rgb(176, 174, 174);
+  border-radius: 5px;
+ 
+  height: 25px;
+  align-items: center;
+}
+
+.list button{
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list .read{
+  background-color: blue;
+}
+.list .delete{
+  background-color: red;
+}
+
+.bookdetails-container{
+  width: 50%;
+}
+.bookdetails-content{
+  background-color: rgba(156, 154, 154, 0.552);
+  padding: 7px 15px;
+  border: none;
+ 
+  border-radius: 5px;
+}
+
+
+.ListDetals-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:940px) {
+  .ListDetals-container{
+    display: block;
+    width: 90%;
+  }
+  .booklist-container,.bookdetails-container{
+    width: 100%;
+  }
+  .insert-container{
+    width: 90%;
+  }
+ 
+
+  
+}
