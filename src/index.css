@@ -48,7 +48,7 @@ form button{
   width: 60px;
   padding:9px;
   color: white;
-  background-color: blue;
+  background-color: rgb(83, 83, 146);
     border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -79,10 +79,10 @@ form button{
 }
 
 .list .read{
-  background-color: blue;
+  background-color: rgb(83, 83, 146);
 }
 .list .delete{
-  background-color: red;
+  background-color: rgb(182, 87, 87);
 }
 
 .bookdetails-container{
