@@ -41,7 +41,7 @@ export const deleteBooks= createAsyncThunk('book/deleteBooks', async (id,thunkAP
             },        });
           
        
-        return res;
+        return id;
        
          } catch(error){
         console.log(error);

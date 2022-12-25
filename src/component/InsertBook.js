@@ -49,7 +49,7 @@ export default function InsertBook() {
     <div className='insert-container'>
       {!isLoggedIn?
       <div className='hint'>
-        <p>please login in first</p>
+        <p>please login first</p>
         </div>:""}
         <h2>Insert Book</h2>
         <form onSubmit={handlesubmit}>
