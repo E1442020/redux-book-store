@@ -40,7 +40,8 @@ export const deleteBooks= createAsyncThunk('book/deleteBooks', async (id,thunkAP
                 'Content-Type': 'application/json; charset=UTF-8',
             },        });
           
-        return id;
+       
+        return res;
        
          } catch(error){
         console.log(error);
