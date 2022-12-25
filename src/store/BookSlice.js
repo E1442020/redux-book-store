@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const getBooks= createAsyncThunk('book/getBooks', async (_,thunkAPI)=>{
     try{
-        const res =await fetch(' http://localhost:3006/books');
+        const res =await fetch(' https://book-store-json-server-myrw.onrender.com/books');
         const data = await res.json();
         return data;
     } catch(error){
@@ -15,7 +15,7 @@ export const insertBooks= createAsyncThunk('book/insertBooks', async (bookData,t
     const {getState}=thunkAPI;
     try{
         bookData.userName=getState().auth.name
-        const res =await fetch(' http://localhost:3006/books',{
+        const res =await fetch(' https://book-store-json-server-myrw.onrender.com/books',{
             method: 'POST',
             body: JSON.stringify(bookData),
             headers: {
@@ -33,7 +33,7 @@ export const deleteBooks= createAsyncThunk('book/deleteBooks', async (id,thunkAP
    
     try{
         
-        const res =await fetch(`http://localhost:3006/books/${id}`,{
+        const res =await fetch(`https://book-store-json-server-myrw.onrender.com/books/${id}`,{
             method: 'DELETE',
            
             headers: {
